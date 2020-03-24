@@ -7,15 +7,17 @@
     <title>Моя библиотека</title>
 </head>
 <body>
+ 
+    <header id="header">
+
+        <p class="head_elem">Все книги</p>
+        <p class="head_elem">Буду читать</p>
+        <p class="head_elem">Прочитано</p>
+
+    </header>   
+
     <div id="container">
 
-        <header id="header">
-
-            <p class="head_elem">Все книги</p>
-            <p class="head_elem">Буду читать</p>
-            <p class="head_elem">Прочитано</p>
-
-        </header>
 
         <section id="functional_block">
 

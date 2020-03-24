@@ -16,6 +16,7 @@ body
 
 #container
 {
+    padding-top: 70px;
     max-width: 1400px;
     min-height: 100%;
     margin: 0 auto;
@@ -24,10 +25,19 @@ body
 
 #header
 {
+    position: fixed;
     background-color: rgb(105, 121, 106);
     display: flex;
     justify-content: space-evenly;
     height: 50px;
+    width: 100%;
+    z-index: 1000;
+}
+
+h2:hover
+{
+    color: rgb(80, 133, 93);
+    cursor: pointer;
 }
 
 .head_elem
