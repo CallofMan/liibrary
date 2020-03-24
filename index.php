@@ -40,7 +40,7 @@
 
                 </div>
                 
-                <h2>Пидор и трансвестит</h2>
+                <h2>Гомо и трансвестит</h2>
 
                 <header class="manipulation_book">
 
@@ -59,7 +59,7 @@
 
                 </div>
                 
-                <h2>Пидор и трансвестит</h2>
+                <h2>Гомо и трансвестит</h2>
 
                 <header class="manipulation_book">
 
@@ -78,7 +78,7 @@
 
                 </div>
                 
-                <h2>Пидор и трансвестит</h2>
+                <h2>Гомо и трансвестит</h2>
 
                 <header class="manipulation_book">
 
@@ -97,7 +97,7 @@
 
                 </div>
                 
-                <h2>Пидор и трансвестит</h2>
+                <h2>Гомо и трансвестит</h2>
 
                 <header class="manipulation_book">
 
@@ -112,11 +112,11 @@
                 
                 <div class="img">
 
-                    <img src="images/^1EEC08AC39E3E041A49FC60B52D152FEF6AFC3F800F102CBD0^pimgpsh_fullsize_distr.jpg" alt="Не грузит" class="title_book">
+                    <img src="#" alt="" class="title_book">
 
                 </div>
                 
-                <h2>Пидор и трансвестит</h2>
+                <h2>Гомор и трансвестит</h2>
 
                 <header class="manipulation_book">
 
