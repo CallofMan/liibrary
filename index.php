@@ -7,7 +7,6 @@
     <title>Моя библиотека</title>
 </head>
 <body>
- 
     <header id="header">
 
         <p class="head_elem">Все книги</p>
@@ -17,8 +16,6 @@
     </header>   
 
     <div id="container">
-
-
         <section id="functional_block">
 
             <section id="search_block">
@@ -28,7 +25,7 @@
 
             </section>
             
-            <input type="button" value="Добавить книгу" id="add_book">
+            <a href="form_add.php" class="add_book">Добавить книгу</a>
 
         </section>
 

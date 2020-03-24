@@ -23,6 +23,25 @@ body
     background-color: rgb(253, 236, 214);
 }
 
+.add_book
+{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 121, 106);
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    transition-duration: .5s;
+}
+
+.add_book:hover
+{
+    font-size: x-large;
+}
+
 #header
 {
     position: fixed;
