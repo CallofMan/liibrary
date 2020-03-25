@@ -11,7 +11,7 @@ html
 
 body
 {
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
 }
 
 #container
@@ -20,7 +20,7 @@ body
     max-width: 1400px;
     min-height: 100%;
     margin: 0 auto;
-    background-color: rgb(253, 236, 214);
+    background-color: rgb(31, 31, 31);
 }
 
 .add_book
@@ -30,7 +30,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(105, 121, 106);
+    background-color: rgb(43, 87, 46);
     text-decoration: none;
     color: white;
     font-size: larger;
@@ -39,13 +39,14 @@ body
 
 .add_book:hover
 {
+    cursor: cell;
     font-size: x-large;
 }
 
 #header
 {
     position: fixed;
-    background-color: rgb(105, 121, 106);
+    background-color: rgb(43, 87, 46);
     display: flex;
     justify-content: space-evenly;
     height: 50px;
@@ -53,9 +54,15 @@ body
     z-index: 1000;
 }
 
-h2:hover
+h2, h3, h4
 {
-    color: rgb(80, 133, 93);
+    color: rgb(255, 255, 255);
+    transition-duration: .5s;
+}
+
+h2:hover, h3:hover, h4:hover
+{
+    color: rgb(43, 87, 46);
     cursor: pointer;
 }
 
@@ -86,18 +93,6 @@ h2:hover
     min-height: 50px;
 }
 
-#add_book
-{
-    width: 150px;
-    height: 35px;
-    margin: 7px 0px;
-}
-
-#add_book:hover
-{
-    cursor: cell;
-}
-
 #search_block
 {
     display: flex;
@@ -120,6 +115,13 @@ h2:hover
     flex-grow: 1;
     cursor: zoom-in;
     width: 70px;
+    border: 0;
+}
+
+#button_search:hover
+{
+    color: white;
+    background-color: rgb(43, 87, 46);
 }
 
 main
@@ -128,6 +130,7 @@ main
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100vh;
 }
 
 .book
@@ -149,10 +152,24 @@ main
     justify-content: space-evenly;
 }
 
-#comment
+.comment
 {
+    border: 0;
     height: 100%;
     width: 150px;
+    transition-duration: .5s;
+}
+
+.comment:hover
+{
+    color: white;
+    background-color: rgb(43, 87, 46);
+    cursor: pointer;
+}
+
+.read:hover, .img img
+{
+    cursor: pointer;
 }
 
 .img 
@@ -160,7 +177,7 @@ main
     position: relative;
     width: 250px;
     height: 350px;
-    background-color: rgb(206, 182, 128);
+    background-color: rgb(47, 75, 63);
 }
 
 .img img
