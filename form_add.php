@@ -18,7 +18,7 @@
             <input type="text" class="input" id="name_book" autofocus placeholder="Введите название книги" required>
             <input type="text" class="input" id="author_book" placeholder="Введите автора книги" required>
             <textarea id="annotation" class="input" placeholder="Напишите аннотацию" required></textarea>
-            <textarea id="annotation" class="input" placeholder="Оставьте личные мысли о прочитанном"></textarea>
+            <textarea id="comment" class="input" placeholder="Оставьте личные мысли о прочитанном"></textarea>
             
             <div class="example-2">
                 <div class="form-group">
