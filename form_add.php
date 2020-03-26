@@ -20,6 +20,8 @@
             <textarea id="annotation" class="input" placeholder="Напишите аннотацию" required></textarea>
             <textarea id="comment" class="input" placeholder="Оставьте личные мысли о прочитанном"></textarea>
             
+            <input type="date" class="input" id="date_of_read" placeholder="Дата прочтения">
+
             <div class="example-2">
                 <div class="form-group">
                     <input type="file" name="file" id="file" class="input-file">
@@ -30,19 +32,13 @@
                 </div>
             </div>
 
-            <input type="date" class="input" id="date_of_read" placeholder="Дата прочтения">
-
             <article>
                 <article>
                     <input type="radio" name="read" id="readed"><label for="readed">Прочитал</label>
                 </article>
                 
                 <article>
-                    <input type="radio" name="read" id="dont_readed"><label for="dont_readed">Не читал</label>
-                </article>
-
-                <article>
-                    <input type="radio" name="read" id="is_reading"><label for="is_reading">Читаю</label>
+                    <input type="radio" name="read" id="dont_readed"><label for="dont_readed">Буду читать</label>
                 </article>
             </article>
             
