@@ -12,19 +12,20 @@
     <a href="index.php" class="back">Назад</a>
 
     <section id="container">
-        <form action="#" method="POST" id="form_container">
+        <form action="adding_book_script.php" enctype="multipart/form-data" method="POST" id="form_container">
             <h1>Добавление книги</h1>
 
-            <input type="text" class="input" id="name_book" autofocus placeholder="Введите название книги" required>
-            <input type="text" class="input" id="author_book" placeholder="Введите автора книги" required>
-            <textarea id="annotation" class="input" placeholder="Напишите аннотацию" required></textarea>
-            <textarea id="comment" class="input" placeholder="Оставьте личные мысли о прочитанном"></textarea>
+            <input type="text" name="name_book" class="input" autofocus placeholder="Введите название книги" required>
+            <input type="text" name="author_book" class="input" placeholder="Введите автора книги" required>
+            <textarea name="annotation" class="input" placeholder="Напишите аннотацию" required></textarea>
+            <textarea name="comment" class="input" placeholder="Оставьте личные мысли о прочитанном"></textarea>
             
-            <input type="date" class="input" id="date_of_read" placeholder="Дата прочтения">
+            <input type="date" name="date_of_writing" class="input" required>
 
             <div class="example-2">
                 <div class="form-group">
-                    <input type="file" name="file" id="file" class="input-file">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="24000000">
+                    <input type="file" name="title" id="file" class="input-file">
                     <label for="file" class="btn btn-tertiary js-labelFile">
                     <i class="icon fa fa-check"></i>
                     <span class="js-fileName">Загрузить обложку</span>
@@ -34,15 +35,15 @@
 
             <article>
                 <article>
-                    <input type="radio" name="read" id="readed"><label for="readed">Прочитал</label>
+                    <input type="radio" value="1" name="status" required><label for="read">Прочитал</label>
                 </article>
                 
                 <article>
-                    <input type="radio" name="read" id="dont_readed"><label for="dont_readed">Буду читать</label>
+                    <input type="radio" value="0" name="status" required><label for="dont_read">Буду читать</label>
                 </article>
             </article>
             
-            <input type="button" class="input" value="Добавить">
+            <input type="submit" name="submit" class="input" value="Добавить">
         </form>
     </section>
     

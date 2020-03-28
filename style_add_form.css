@@ -139,6 +139,11 @@ input[type="button"]:hover
     color:#5AAC7B;
 }
 
+input[type="radio"], label
+{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px)
 {
     #form_container
