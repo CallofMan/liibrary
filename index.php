@@ -9,9 +9,9 @@
 <body>
     <header id="header">
 
-        <p class="head_elem">Все книги</p>
-        <p class="head_elem">Буду читать</p>
-        <p class="head_elem">Прочитано</p>
+        <p class="head_elem" id='all_books'>Все книги</p>
+        <p class="head_elem" id='will_read'>Буду читать</p>
+        <p class="head_elem" id='read'>Прочитано</p>
 
     </header>   
 
@@ -31,33 +31,10 @@
 
         <main>
 
-            <?php
-                require_once "output_data_in_index.php";
-            ?>
-            
-            <article class="book">
-                
-                <div class="img">
-
-                    <img src="images/1451835669_andrea-guardino_lotr_hobbit_nazgul-king_2.jpg" alt="Не грузит" class="title_book">
-
-                </div>
-                
-                <h2>"Гомо и трансвестит"</h2>
-                <h3>Музей Эвклаптович</h3>
-                <h4>24.01.2001</h4>    
-                <header class="manipulation_book">
-
-                    <img src="images/галочка.png" alt="Не грузит" class="read">
-                    <input type="button" value="Конспект" class="comment">
-
-                </header>
-
-            </article>
-
-            
-
         </main>
     </div>
+
+    <script src="ajax.js"></script>
+    
 </body>
 </html>

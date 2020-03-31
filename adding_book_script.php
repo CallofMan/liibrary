@@ -9,20 +9,20 @@
     $date_of_writing = $_POST['date_of_writing'];
     $date_of_added = date("Y-m-d");
     $status = $_POST['status'];
-    $title = $_POST['title'];
+    $title = $_FILES['title']['tmp_name'];
 
     $query = mysqli_query($connect, "INSERT INTO books VALUES (NULL, '$name', '$author', '$date_of_added', '$date_of_writing', '$annotation', '$comment', $status)");
 
-    $query = mysqli_query($connect, "SELECT id FROM books ORDER BY id DESC LIMIT 1");
-    $id = mysqli_fetch_array($query);
-    $id = $id[0];
-
     if ($title)
     {
-        $data = addslashes(fread(fopen($_FILES['title']['tmp_name'], "r"), 
-        filesize($_FILES['title']['tmp_name'])));
+        $query = mysqli_query($connect, "SELECT id FROM books ORDER BY id DESC LIMIT 1");
+        $id = mysqli_fetch_array($query);
+        $id = $id[0];
+
+        $data = addslashes(fread(fopen($title, "r"), 
+        filesize($title)));
     
-        $size = filesize($_FILES['title']['tmp_name']);
+        $size = filesize($title);
     
         $result=$connect->prepare("INSERT INTO images (id, image, size_image, type_image) 
         "."VALUES (".$id.",

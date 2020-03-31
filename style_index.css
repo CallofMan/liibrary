@@ -167,7 +167,7 @@ main
     cursor: pointer;
 }
 
-.read:hover, .img img
+.read:hover, .img
 {
     cursor: pointer;
 }
