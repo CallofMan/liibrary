@@ -13,12 +13,12 @@
 
     $query = mysqli_query($connect, "INSERT INTO books VALUES (NULL, '$name', '$author', '$date_of_added', '$date_of_writing', '$annotation', '$comment', $status)");
 
+    $query = mysqli_query($connect, "SELECT id FROM books ORDER BY id DESC LIMIT 1");
+    $id = mysqli_fetch_array($query);
+    $id = $id[0];
+
     if ($title)
     {
-        $query = mysqli_query($connect, "SELECT id FROM books ORDER BY id DESC LIMIT 1");
-        $id = mysqli_fetch_array($query);
-        $id = $id[0];
-
         $data = addslashes(fread(fopen($title, "r"), 
         filesize($title)));
     
@@ -33,6 +33,10 @@
         if(!$result) exit("Ошибка выполнения SQL запроса!");
 
         $result->execute();
+    }
+    else
+    {
+        $query = mysqli_query($connect, "INSERT INTO images VALUES ($id, NULL, NULL, NULL)");
     }
     
 
