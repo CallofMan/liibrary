@@ -31,6 +31,10 @@
 
         <main>
 
+            <?php
+                require_once "output_data_in_index.php";
+            ?>
+            
             <article class="book">
                 
                 <div class="img">
