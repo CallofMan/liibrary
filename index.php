@@ -30,11 +30,17 @@
         </section>
 
         <main>
+        
+            <?php
+
+                require_once "output_data_in_index.php";
+
+            ?>
 
         </main>
     </div>
 
     <script src="ajax.js"></script>
-    
+
 </body>
 </html>
