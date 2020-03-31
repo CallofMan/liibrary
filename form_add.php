@@ -24,7 +24,7 @@
 
             <div class="example-2">
                 <div class="form-group">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="24000000">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="50000000">
                     <input type="file" name="title" id="file" class="input-file">
                     <label for="file" class="btn btn-tertiary js-labelFile">
                     <i class="icon fa fa-check"></i>
