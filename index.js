@@ -13,3 +13,15 @@ menu.forEach(element => {
         idMenu.style.fontVariant = 'small-caps';
     })
 });
+
+
+let books = document.querySelectorAll('.book *');
+
+books.forEach(element => {
+    element.addEventListener('click', function()
+    {
+        let id = element.parentElement.id.replace(/[^0-9]/g, "");
+
+        console.log(id);
+    })
+});

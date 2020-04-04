@@ -19,7 +19,7 @@
 
         echo 
         '
-            <article class="book">
+            <article class="book" id="book' . $row['id'] . '">
             
                 <div class="img">
 
