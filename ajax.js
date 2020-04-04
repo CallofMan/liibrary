@@ -1,4 +1,5 @@
 let choiceCategories = document.querySelectorAll('.head_elem');
+let toTop = document.getElementById('functional_block');
 
 let showBooks = function() 
 {
@@ -24,6 +25,8 @@ let showBooks = function()
             document.querySelector('main').innerHTML = data;
         })
     }
+
+    toTop.scrollIntoView({block: "end", inline: "nearest"});
 };
 
 choiceCategories.forEach(element => 
