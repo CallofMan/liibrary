@@ -41,6 +41,6 @@
     </div>
 
     <script src="ajax.js"></script>
-
+    <script src="index.js"></script>
 </body>
 </html>
