@@ -67,6 +67,11 @@ label
     transition-duration: .5s;
 }
 
+.input
+{
+    min-width: 100%;
+}
+
 input[type="button"]:hover
 {
     background-color: rgb(43, 87, 46);
@@ -155,5 +160,10 @@ input[type="radio"], label
     {
         left: 5px;
         top: 5px;
+    }
+
+    #container
+    {
+        padding: 0px 5px;
     }
 }
